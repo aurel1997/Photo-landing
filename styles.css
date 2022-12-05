@@ -1,0 +1,298 @@
+html, body {
+    background-image: linear-gradient(to top, #071304, #0f200e, #102e15, #0e3d1b, #054c23);
+    height: 100%;
+    width: 100%;
+    position: ab;
+}
+.navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1500px;
+  }
+  
+  .navbar-logo {
+    top: 0%;
+    fill: rgb(0, 0, 0);
+    justify-self: start;
+    align-items: flex-start;
+   
+    text-decoration: none;
+    font-size: 2px;
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    
+  }
+  
+  .fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    height: 80px;
+  }
+  
+  .nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  
+  .nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: absolute;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
+  }
+
+
+.ul-list {
+    display: flex;
+    list-style-type: none;  
+    padding:0%;
+    justify-content: center;
+  }
+  
+  .button {
+    --b: 3px;  
+    --s: .45em; 
+    --color: rgb(22, 132, 79);
+    margin: 32px;
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+   text-decoration: none;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    list-style: none;
+   
+    
+  }
+  
+  .button:hover,
+  .button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button:active {
+    background: var(--color);
+    color: #fff;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+  .bckPhoto{
+    background-image: url("Weding1.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    box-shadow: inset 0 0 0 2000px rgba(198, 239, 211, 0.3);
+
+  }
+
+  .herro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 6em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(34, 175, 71), #fff, rgb(81, 165, 68));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 9s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(40, 127, 69, 0);
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  .btnContainer {
+ 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+.btnHire {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+.btnHire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: rgb(212, 242, 212);
+	transition: 500ms ease-in-out;
+    border-radius: 4px;
+}
+
+.btnHire:hover {
+	box-shadow: 20px 5px 0 rgb(8, 75, 8), -20px -5px 0 rgb(8, 75, 8);
+}
+
+
