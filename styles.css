@@ -3,6 +3,9 @@ html, body {
     height: 100%;
     width: 100%;
     position: ab;
+    margin: 0%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .navbar {
     height: 80px;
@@ -17,7 +20,7 @@ html, body {
   }
   
   .navbar-container {
-position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,18 +29,20 @@ position: relative;
     max-width: 1500px;
   }
   
-  .navbar-logo {
-    top: 0%;
-    fill: rgb(0, 0, 0);
-    justify-self: start;
-    align-items: flex-start;
-   
-    text-decoration: none;
-    font-size: 2px;
-    display: flex;
+  .navbar-log-container {
+    display:flex;
+    width: 100%;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
+    fill: #054c23;
+  }
+
+  .navbar-logo {
+    float: left;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -50px;
+    left: -50px
     
   }
   
@@ -127,8 +132,6 @@ position: relative;
   
     .navbar-logo {
       position: absolute;
-      top: 0;
-      left: 0;
       transform: translate(25%, 50%);
     }
   
@@ -294,5 +297,4 @@ position: relative;
 .btnHire:hover {
 	box-shadow: 20px 5px 0 rgb(8, 75, 8), -20px -5px 0 rgb(8, 75, 8);
 }
-
 
