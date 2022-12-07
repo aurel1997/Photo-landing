@@ -1,5 +1,5 @@
 html, body {
-    background-image: linear-gradient(to top, #071304, #0f200e, #102e15, #0e3d1b, #054c23);
+    background-image: black;
     height: 100%;
     width: 100%;
     position: ab;
@@ -10,30 +10,35 @@ html, body {
 .navbar {
     height: 80px;
     width: 100%;
+    position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     font-size: 1.2rem;
     position: absolute;
     top: 0;
+    right: 0;
     z-index: 999;
+    background-color: rgb(0, 0, 0, .2)
+  }
+
+  .navbar-logo-container {
+    display:flex;
+    width: 100%;
+    align-items: center;
+    fill: #fcfcfc;
+    float: right;
+    justify-content: end;
   }
   
   .navbar-container {
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     height: 80px;
     width: 100%;
     max-width: 1500px;
-  }
-  
-  .navbar-log-container {
-    display:flex;
-    width: 100%;
-    align-items: center;
-    fill: #054c23;
   }
 
   .navbar-logo {
@@ -42,212 +47,92 @@ html, body {
     height: 200px;
     position: absolute;
     top: -50px;
-    left: -50px
-    
+    left: -50px;
+    z-index: 999;
   }
   
-  .fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-  }
-  
-  .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    width: 60vw;
-    justify-content: end;
-    margin-right: 2rem;
-  }
-  
-  .nav-item {
-    height: 80px;
-  }
-  
-  .nav-links {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    height: 100%;
-  }
-  
-  .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
-  }
-  
-  .fa-bars {
-    color: #fff;
-  }
-  
-  .nav-links-mobile {
-    display: none;
-  }
-  
-  .menu-icon {
-    display: none;
-  }
-  
-  @media screen and (max-width: 960px) {
-    .NavbarItems {
-      position: absolute;
-    }
-  
-    .nav-menu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 90vh;
-      position: absolute;
-      top: 80px;
-      left: -100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-  
-    .nav-menu.active {
-      background: #242222;
-      left: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-    }
-  
-    .nav-links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-  
-    .nav-links:hover {
-      background-color: #fff;
-      color: #242424;
-      border-radius: 0;
-    }
-  
-    .navbar-logo {
-      position: absolute;
-      transform: translate(25%, 50%);
-    }
-  
-    .menu-icon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-  
-    .fa-times {
-      color: #fff;
-      font-size: 2rem;
-    }
-  
-    .nav-links-mobile {
-      display: block;
-      text-align: center;
-      margin: 2rem auto;
-      border-radius: 4px;
-      width: 80%;
-      text-decoration: none;
-      font-size: 1.5rem;
-      background-color: transparent;
-      color: #fff;
-      padding: 14px 20px;
-      border: 1px solid #fff;
-      transition: all 0.3s ease-out;
-    }
-  
-    .nav-links-mobile:hover {
-      background: #fff;
-      color: #242424;
-      transition: 250ms;
-    }
-  }
-
-
 .ul-list {
     display: flex;
     list-style-type: none;  
-    padding:0%;
+    padding-right: 32px;
     justify-content: center;
+
   }
   
-  .button {
-    --b: 3px;  
-    --s: .45em; 
-    --color: rgb(22, 132, 79);
-    margin: 32px;
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .6em;
+  .nav-buttons {
+   color: rgb(255, 255, 255);
     font-size: 16px;
-   text-decoration: none;
+    text-decoration: none;
+    letter-spacing: 1px;
     border: 0;
-    user-select: none;
-    -webkit-user-select: none;
+    margin: 24px;
+    font-weight: 700;
     touch-action: manipulation;
     list-style: none;
-   
-    
   }
   
-  .button:hover,
-  .button:focus-visible{
-    --_p: 0px;
-    outline-color: var(--color);
-    outline-offset: .05em;
+  .nav-buttons:hover{
+    color: rgb(92, 88, 88);
   }
   
   .button:active {
-    background: var(--color);
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 
   .bckPhoto{
-    background-image: url("Weding1.jpg");
+    background: url("Weding1.jpg");
+    display: flex;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    box-shadow: inset 0 0 0 2000px rgba(198, 239, 211, 0.3);
+    animation: change 30s infinite ease-in-out;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
 
+  @keyframes change {
+    0% {
+        background-image: url("image1.jpg");
+    }
+    20% {
+        background-image: url("Weding2.jpg");
+    }
+    40% {
+        background-image: url("Weding5.jpg");
+    }
+    60% {
+        background-image: url("image2.jpg");
+    }
+    80% {
+        background-image: url("image3.jpg");
+    }
+    100% {
+        background-image: url("image5.jpg");
+    }
   }
 
   .herro {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    height: 40vh;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    font-size: 6em;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 7em;
     letter-spacing: 4px;
     overflow: hidden;
-    background: linear-gradient(90deg, rgb(34, 175, 71), #fff, rgb(81, 165, 68));
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(0, 0, 0), rgb(255, 255, 255));
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: animate 9s linear infinite;
+    animation: animate 12s linear infinite;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(40, 127, 69, 0);
-    font-family: 'Roboto Slab', serif;
+    -webkit-text-fill-color: rgba(244, 244, 244, 0);
+    margin: 0%;
   }
   
   @keyframes animate {
@@ -259,42 +144,21 @@ html, body {
     }
   }
 
-  .btnContainer {
- 
+  .moment{
+    color: rgb(0, 0, 0);
+    justify-content: start;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-size: 7em;
+    letter-spacing: 4px;
+    margin: 0%;
+    padding-top: 24px;
+    -webkit-text-stroke: 1px #fff;
   
-.btnHire {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-		-webkit-tap-highlight-color: transparent;
+  }
+  .text-Container{
+    display: flexbox;
+    margin: 15rem;
+    margin-right: 10rem;
 }
-
-.btnHire {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-	width: 150px;
-	height: 50px;
-	cursor: pointer;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-	background: rgb(212, 242, 212);
-	transition: 500ms ease-in-out;
-    border-radius: 4px;
-}
-
-.btnHire:hover {
-	box-shadow: 20px 5px 0 rgb(8, 75, 8), -20px -5px 0 rgb(8, 75, 8);
-}
-
