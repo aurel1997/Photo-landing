@@ -161,4 +161,44 @@ html, body {
     display: flexbox;
     margin: 15rem;
     margin-right: 10rem;
+
+}
+
+.btn-contactsme-container{
+    padding-top: 48px;
+}
+.contacts-me{
+    border-radius: 0px;
+    text-decoration: none;
+    
+    padding: 18px 24px;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif; font-weight:600;
+    letter-spacing: 3px;
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            cursor: pointer;
+}
+.contacts-me:hover{
+    -webkit-transition: all .4s ease-in-out;
+       -moz-transition: all .4s ease-in-out;
+        -ms-transition: all .4s ease-in-out;
+         -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+.contacts-me{
+    border:solid 3px #fff;
+    background: transparent;
+    color: #fff !important;
+    
+}
+.contacts-me:hover{
+    border:solid 2px #fff;
+    background: #fff;
+    color: #1f1f1f !important;
 }
