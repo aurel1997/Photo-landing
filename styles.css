@@ -1,11 +1,16 @@
-html, body {
+html{
+  height: 100%;
+  overflow: hidden;
+}
+body {
     background-image: black;
     width: 100%;
     margin: 0%;
+    height: 100%;
     max-width: 100%;
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
     position: absolute;
-  overflow-x: hidden;
+   overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -73,7 +78,6 @@ position: relative;
     list-style-type: none;  
     padding-right: 32px;
     justify-content: center;
-
   }
   
   .nav-buttons {
@@ -107,7 +111,6 @@ position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     animation: change 30s infinite ease-in-out;
- 
   }
 
   @keyframes change {
@@ -147,7 +150,6 @@ position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(244, 244, 244, 0);
     margin: 0%;
-    
   }
   
   @keyframes animate {
@@ -240,6 +242,7 @@ position: relative;
   align-items: center;
   justify-content: space-around;
 }
+
 .about-text h1{
   color: rgb(0, 0, 0);
   font-size: 80px;
@@ -247,6 +250,7 @@ position: relative;
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 .me{
   color: rgb(5, 131, 85)
 }
@@ -300,7 +304,6 @@ position: relative;
   width: 20px;
   text-align: center;
   text-decoration: none;
-  
 }
 
 .fa:hover {
@@ -312,7 +315,7 @@ position: relative;
 }
 
 .fa-google {
-  color: #ac3400;
+  color: #03a14a;
 }
 
 .fa-instagram {
@@ -331,7 +334,6 @@ position: relative;
   width: 100%;
   align-items: center;
   justify-content: space-around;
-
 }
 
 .social-container{
@@ -341,7 +343,6 @@ position: relative;
 .button-contact-container{
   display: inline-block;
 }
-
 
 .text {
   width: 100%; 
@@ -356,7 +357,6 @@ position: relative;
   letter-spacing: 2px;
   color: rgb(1, 78, 59);
   font-size: 14px;
- 
 }
 
 .get-in-touch{
@@ -379,5 +379,37 @@ position: relative;
   letter-spacing: 1px;
   color: rgb(1, 78, 59);
   font-size: 14px;
-
 }
+
+.latest-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+  margin: 50px
+  }
+
+  .latest-list img {
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  cursor: pointer;
+  }
+
+  .latest-list img:hover {
+    transform: scale(1.2);
+    transition: .8s;
+  }
+
+  .my-latest-text{
+  margin-left: 50px;
+  font-family: 'Montserrat', sans-serif; font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 40px;
+  }
+
+  .my-latest-text span{
+    color: rgb(5, 131, 85);
+  }
