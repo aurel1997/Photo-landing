@@ -417,11 +417,19 @@ position: relative;
   .footer {
     background:linear-gradient(137deg, rgba(2,107,62,1) 0%, rgba(0,0,0,1) 100%);
     line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 84px;
   }
+
+.links{
+  margin: 24px;
+}
 
 .links a{
   color: rgb(255, 255, 255);
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
   letter-spacing: 1px;
   border: 0;
@@ -429,7 +437,10 @@ position: relative;
   font-weight: 700;
   touch-action: manipulation;
   list-style: none;
-  width: 50%;
+}
+
+.links a:hover{
+  color: rgb(5, 131, 85);
 }
 
 .contacts p{
@@ -438,23 +449,24 @@ position: relative;
   line-height: 28px;
   margin-bottom: 14px;
   letter-spacing: 1px;
-  margin: 0;
+  margin: 24px;
+  flex-grow: 2;
 }
 
 .social-container-footer a{
   position: relative;
   padding: 20px;
-  font-size: 30px !important;
+  font-size: 15px !important;
   width: 20px;
   text-align: center;
   text-decoration: none;
-margin: 0;
+  margin: 24px;
   z-index: 100;
   color:rgb(255, 255, 255);
+  flex-grow: 2;
 }
 
 .social-container-footer{
   display: inline-block;
 margin: 0;
-width: 100%;
 }
