@@ -413,3 +413,48 @@ position: relative;
   .my-latest-text span{
     color: rgb(5, 131, 85);
   }
+
+  .footer {
+    background:linear-gradient(137deg, rgba(2,107,62,1) 0%, rgba(0,0,0,1) 100%);
+    line-height: 50px;
+  }
+
+.links a{
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 0;
+  margin: 24px;
+  font-weight: 700;
+  touch-action: manipulation;
+  list-style: none;
+  width: 50%;
+}
+
+.contacts p{
+  color: white;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.social-container-footer a{
+  position: relative;
+  padding: 20px;
+  font-size: 30px !important;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+margin: 0;
+  z-index: 100;
+  color:rgb(255, 255, 255);
+}
+
+.social-container-footer{
+  display: inline-block;
+margin: 0;
+width: 100%;
+}
