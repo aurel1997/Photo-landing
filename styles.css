@@ -102,8 +102,9 @@ position: relative;
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
 
+
   .bckPhoto{
-    background: url("Weding1.jpg");
+    background: url("assets/Weding1.jpg");
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -113,24 +114,34 @@ position: relative;
     animation: change 30s infinite ease-in-out;
   }
 
+  .bckPhoto::after{
+    content:'';
+    position:absolute;
+    background-color: rgba(0,0,0,0.35);
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+  }
+
   @keyframes change {
     0% {
-        background-image: url("image1.jpg");
+        background-image: url("assets/image1.jpg");
     }
     20% {
-        background-image: url("Weding2.jpg");
+        background-image: url("assets/Weding2.jpg");
     }
     40% {
-        background-image: url("Weding5.jpg");
+        background-image: url("assets/Weding5.jpg");
     }
     60% {
-        background-image: url("image2.jpg");
+        background-image: url("assets/image2.jpg");
     }
     80% {
-        background-image: url("image3.jpg");
+        background-image: url("assets/image3.jpg");
     }
     100% {
-        background-image: url("image5.jpg");
+        background-image: url("assets/image5.jpg");
     }
   }
 
@@ -150,6 +161,7 @@ position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(244, 244, 244, 0);
     margin: 0%;
+    z-index: 999;
   }
   
   @keyframes animate {
@@ -171,6 +183,8 @@ position: relative;
     margin: 0%;
     padding-top: 24px;
     position: relative;
+    color: #ffffff;
+    z-index: 999;
   }
 
 .text-Container{
